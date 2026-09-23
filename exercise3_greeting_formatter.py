@@ -9,6 +9,8 @@ def format_greeting(name, title="Customer"):
     name = name.title()
     first_name = name.split()[0]
 
+    
+
     return f"Hello, {first_name} ({title})!"
 
 
