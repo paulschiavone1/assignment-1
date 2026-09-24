@@ -6,12 +6,10 @@ def format_greeting(name, title="Customer"):
     if name == "":
         return "Hello, Valued Customer!"
 
+    name = " ".join(name.split())
     name = name.title()
-    first_name = name.split()[0]
 
-    
-
-    return f"Hello, {first_name} ({title})!"
+    return f"Hello, {name}!"
 
 
 name = input("What's your full name? ")
